@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Application Form</title>
+    <style>
+    .button2{
+        display: flex;
+        gap: 80px;
+    }
+    form {
+        padding: 20px;
+        
+        box-shadow: 0px 0px 6px gray;
+        color: black;
+        margin: auto;
+        width: 70vh;
+      }
+</style>
+</head>
+<body>
+    <!-- ================= STEP 2: DOCUMENTS ================= -->
+
+
+</body>
+</html>
+<form class="con">
+    <h1>Step 2: Documents</h1>
+
+<p>
+Please upload all your academic documents including transcripts,
+completion certificates, and character certificates.
+</p>
+
+<label>Upload Academic Documents (Multiple Files Allowed):</label><br>
+<input type="file" accept="image/*,.pdf" multiple><br><br>
+<div class="button2">
+    <a href="./step3.html">
+<button class="nxt2" type="button">Next</button>
+    </a>
+    <a href="./step1.html">
+<button onclick="goPrevious()" class="pre2" type="button">Previous</button>
+    </a>
+</div>
+
+<hr>
+</form>
+<script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // stops page reload
+        });
+
+        function goPrevious() {
+            window.location.href = "step1.html"
+        }
+    </script>
+</body>
+</html>
