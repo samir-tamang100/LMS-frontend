@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Simple Form Design</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f9;
+      }
+
+      .form-container {
+        width: 600px;
+        margin: 50px auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .row {
+        display: flex; /* Makes fields in one row */
+        gap: 15px; /* Space between inputs */
+      }
+
+      .form-group {
+        flex: 1; /* Equal width */
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px;
+        width: 100%;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .heading-two {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form-container">
+      <h2 class="heading-two">Step 1: Information</h2>
+      <h2 class="heading-two">Personal Information</h2>
+
+      <form>
+        <div class="row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" name="fname" />
+          </div>
+
+          <div class="form-group">
+            <label>Middle Name</label>
+            <input type="text" name="mname" />
+          </div>
+
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" name="lname" />
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 5px">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" />
+          </div>
+
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="number" name="phone" />
+          </div>
+        </div>
+
+        <div style="display: flex; column-gap: 98px;">
+          <div class="row" style="margin-top: 5px">
+            <div class="form-group">
+              <label>Gender</label>
+              <div>
+                <input type="radio" name="gender" />Male
+                <input type="radio" name="gender" />Female
+                <input type="radio" name="gender" />Others
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 5px">
+            <div class="form-group">
+              <label>Date of Birth</label>
+              <div>
+                <input type="date" name="date" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; column-gap: 105px;">
+          <div class="row" style="margin-top: 5px">
+            <div class="form-group">
+              <label>Blod Groups</label>
+              <select style="border: none; width: 200px; height: 30px; outline: none; box-shadow: 0px 0px 1px gray;">
+                <option type="checkbox" name="gender">Select Blood Groups</option>
+                <option type="checkbox" name="gender">A+</option>
+                <option type="checkbox" name="gender">A-</option>
+                <option type="checkbox" name="gender">B+</option>
+                <option type="checkbox" name="gender">B-</option>
+                <option type="checkbox" name="gender">AB+</option>
+                <option type="checkbox" name="gender">AB-</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 5px">
+            <div class="form-group">
+              <label>Upload Applicant Photo</label>
+              <div>
+                <input type="file" name="date" style="outline: none; border: none; box-shadow: 0px 0px 1px gray;" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="row" style="margin-top: 5px">
+          <div class="form-group">
+            <label>Father's Name</label>
+            <input type="text" name="fatherName" style="outline: none; border: none; box-shadow: 0px 0px 1px gray;" />
+          </div>
+
+          <div class="form-group">
+            <label>Father's Occupation</label>
+            <input type="text" name="fatherOccupation" style="outline: none; border: none; box-shadow: 0px 0px 1px gray;" />
+          </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 5px">
+          <div class="form-group">
+            <label>Mother's Name</label>
+            <input type="text" name="motherName" style="outline: none; border: none; box-shadow: 0px 0px 1px gray;" />
+          </div>
+
+          <div class="form-group">
+            <label>Mother's Occupation</label>
+            <input type="text" name="motherOccupation" style="outline: none; border: none; box-shadow: 0px 0px 1px gray;" />
+          </div>
+
+          <div class="form-group">
+            <label>Mother's Occupation</label>
+            <input type="text" name="motherOccupation" style="outline: none; border: none; box-shadow: 0px 0px 1px gray;" />
+          </div>
+        </div>
+
+
+
+
+        <div class="row" style="margin-top: 5px">
+          <div class="form-group">
+            <label>Garden's Phone</label>
+            <input type="number" name="gf" style="outline: none; border: none; box-shadow: 0px 0px 1px gray;" />
+          </div>
+
+          <div class="form-group">
+            <label>ID Number Citizenship</label>
+            <input type="number" name="fatherOccupation" style="outline: none; border: none; box-shadow: 0px 0px 1px gray;" />
+          </div>
+
+           <div class="form-group">
+            <label>Upload ID Photo</label>
+            <input type="file" name="idPhoto" style="outline: none; border: none; box-shadow: 0px 0px 1px gray; width: 185px;" />
+          </div>
+        </div>
+
+        <div style="border: 1px solid gray; margin-top: 10px;"></div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
